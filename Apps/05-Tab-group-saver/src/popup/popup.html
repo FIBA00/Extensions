@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tab Group Saver</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Tab Group Saver</h1>
+        </header>
+
+        <div class="section">
+            <h2>Active Groups</h2>
+            <div id="active-groups-list" class="group-list">
+                <!-- Active groups will be injected here -->
+                <div class="empty-state">Loading active groups...</div>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="section">
+            <h2>Saved Groups</h2>
+            <div id="saved-groups-list" class="group-list">
+                <!-- Saved groups will be injected here -->
+                <div class="empty-state">No saved groups yet.</div>
+            </div>
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+
+</html>

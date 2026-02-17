@@ -1,0 +1,15 @@
+{
+	"manifest_version": 3,
+	"name": "Tab Group Saver",
+	"version": "1.0",
+	"description": "Save and restore your tab groups easily.",
+	"permissions": ["tabGroups", "tabs", "storage"],
+	"action": {
+		"default_popup": "src/popup/popup.html",
+		"default_title": "Tab Group Saver"
+	},
+	"icons": {
+		"48": "icons/icon48.png",
+		"128": "icons/icon128.png"
+	}
+}
