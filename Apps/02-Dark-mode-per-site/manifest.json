@@ -1,0 +1,27 @@
+{
+	"manifest_version": 3,
+	"name": "Dark Mode Per Site",
+	"version": "1.0",
+	"description": "Enable custom Dark Mode per domain.",
+	"permissions": ["storage", "activeTab", "scripting"],
+	"host_permissions": ["<all_urls>"],
+	"action": {
+		"default_popup": "src/popup/popup.html",
+		"default_title": "Dark Mode Settings"
+	},
+	"background": {
+		"service_worker": "src/background.js"
+	},
+	"content_scripts": [
+		{
+			"matches": ["<all_urls>"],
+			"js": ["src/content.js"],
+			"css": ["src/styles/dark-mode.css"],
+			"run_at": "document_start"
+		}
+	],
+	"icons": {
+		"48": "icons/icon48.png",
+		"128": "icons/icon128.png"
+	}
+}
