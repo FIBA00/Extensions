@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Edit Screenshot</title>
+    <link rel="stylesheet" href="editor.css">
+</head>
+
+<body>
+    <div id="toolbar">
+        <div class="tool-group">
+            <label for="colorPicker">Color:</label>
+            <input type="color" id="colorPicker" value="#ff0000">
+        </div>
+
+        <div class="tool-group">
+            <label for="lineWidth">Size:</label>
+            <input type="range" id="lineWidth" min="1" max="10" value="3">
+        </div>
+
+        <button id="undoBtn" title="Undo last action">Undo</button>
+        <button id="clearBtn" title="Clear all annotations">Clear</button>
+
+        <div class="separator"></div>
+
+        <button id="downloadBtn" class="primary-btn" title="Save to disk">Download</button>
+        <button id="uploadBtn" class="secondary-btn" title="Upload to cloud storage">Upload to Cloud ☁️</button>
+    </div>
+
+    <div id="canvas-container">
+        <canvas id="canvas"></canvas>
+    </div>
+
+    <script src="editor.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+{
+	"manifest_version": 3,
+	"name": "Quick Screenshot + Annotate",
+	"version": "1.0",
+	"description": "Capture visible tab, annotate, and export.",
+	"permissions": ["activeTab", "storage", "downloads", "unlimitedStorage"],
+	"action": {
+		"default_popup": "src/popup/popup.html",
+		"default_title": "Take Screenshot"
+	},
+	"icons": {
+		"48": "icons/icon48.png",
+		"128": "icons/icon128.png"
+	}
+}
