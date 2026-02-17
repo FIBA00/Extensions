@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+    <main id="main">
+
+        <h2>Tab Auto-Closer Settings</h2>
+
+        <div class="setting-group">
+            <label for="limit">Close inactive tabs after (minutes):</label>
+            <input type="number" id="limit" min="0.5" step="0.5" value="60">
+            <div class="hint">Minimum 0.5 minutes (30 seconds)</div>
+        </div>
+
+        <div class="setting-group">
+            <label for="whitelist">Whitelist (one domain per line):</label>
+            <textarea id="whitelist" placeholder="google.com&#10;music.youtube.com"></textarea>
+            <div class="hint">Tabs matching these will never be closed.</div>
+        </div>
+
+        <button id="save">Save Settings</button>
+        <div id="status"></div>
+    </main>
+    <script src="popup.js"></script>
+</body>
+
+</html>

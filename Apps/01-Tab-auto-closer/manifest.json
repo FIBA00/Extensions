@@ -1,0 +1,18 @@
+{
+	"manifest_version": 3,
+	"name": "Tab Auto-Closer",
+	"version": "1.0",
+	"description": "Automatically closes inactive tabs after a set time.",
+	"permissions": ["tabs", "alarms", "storage"],
+	"background": {
+		"service_worker": "src/background.js"
+	},
+	"action": {
+		"default_popup": "src/popup/popup.html",
+		"default_title": "Tab Auto-Closer Settings"
+	},
+	"icons": {
+		"48": "icons/tabs48.png",
+		"128": "icons/tabs128.png"
+	}
+}
